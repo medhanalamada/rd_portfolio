@@ -6,14 +6,13 @@ This project examines the performance of firms with and without reported R&D exp
 
 ## Methodology
 ### Data Retrieval & Cleaning
-The Wharton Research Data Services (WRDS) database is a widely utilized data platform designed to support research in a multitude of disciplines. For this research, data was acquired from two WRDS datasets: Compustat/CRSP linked fundamentals annual data and CRSP (V2) stock monthly returns data. Compustat provided firm-level financial data, including R&D expenditures, while CRSP offered market return and capitalization details. The two data sets were merged on the year and a unique identifier (Year and PERMNO). The market factor data was loaded from the Kenneth R. French Data Library. This included the risk-free rate and excess market return factor for all months and was filtered accordingly for the date range. All datasets were cleaned and filtered according to numerous constraints, i.e.,  including U.S. only firms, and no pharma or financial firms to remove concentrated R&D industries.
+The Wharton Research Data Services (WRDS) database is a widely utilized data platform designed to support research in a multitude of disciplines. For this research, data was acquired from two WRDS datasets: Compustat/CRSP linked fundamentals annual data and CRSP (V2) stock monthly returns data. Compustat provided firm-level financial data, including R&D expenditures, while CRSP offered market return and capitalization details. The two data sets were merged on the year and a unique identifier (Year and PERMNO). The market factor data was loaded from the Kenneth R. French Data Library. This included the risk-free rate and excess market return factor for all months and was filtered accordingly for the date range. All datasets were cleaned and filtered according to numerous constraints, i.e.,  including U.S.only firms, and no pharma or financial firms to remove concentrated R&D industries.
 
 ## Portfolio Construction
 Two types of portfolios were constructed: equal-weighted and value-weighted. Firms were categorized into two groups based on their R&D expenditure (XRD): those with R&D (XRD>0) and those without (XRD=0). Equal-weighted portfolio returns were calculated as the average return of all firms in a group on a given date, while value-weighted portfolio returns were calculated by weighting each firm's return by its market capitalization. This distinction captures two different dimensions of portfolio performance: equal-weighted portfolios emphasize the performance of smaller firms by giving all firms the same weight, while value-weighted portfolios reflect the influence of larger, more established firms that dominate market capitalization.
 
 ## Results 
-<img width="602" alt="Screen Shot 2025-01-31 at 6 43 24 PM" src="https://github.com/user-attachments/assets/dab85d2a-e043-4a21-ad0b-f327355c494d" />
-
+<img width="681" alt="Screen Shot 2025-01-31 at 6 46 38 PM" src="https://github.com/user-attachments/assets/0bd492f0-1298-4b6a-adbc-00d49d74cb33" />
 
 ## Key Takeaways:
 Alphas: None of the portfolios exhibit statistically significant alphas, suggesting no evidence of consistent outperformance or underperformance relative to the market after adjusting for risk.
